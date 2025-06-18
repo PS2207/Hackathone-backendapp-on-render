@@ -16,9 +16,10 @@ public class WebConfig {
 	          registry.addMapping("/**")
 	             .allowedOrigins("https://splendid-tiramisu-9c34de.netlify.app") //Replace with your 'Netlify URL' while connection between 'frontend & backend' in production
 	             .allowedMethods("GET", "POST", "PUT", "DELETE")
-	             .allowedHeaders("*");
+	             .allowedHeaders("*")
+	             .allowCredentials(true);
 	       }
 	    };
 	}
 }
-//.allowCredentials(true)
+//
