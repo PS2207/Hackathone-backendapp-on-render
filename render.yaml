@@ -7,8 +7,6 @@ services:
     #buildCommand: ./mvnw clean install
     #startCommand: java -jar target/LifeInWeeks-Backend-0.0.1-SNAPSHOT.jar
     envVars:
-      - key: PORT
-        value: 8080
       - key: spring.datasource.url
         value: "jdbc:postgresql://dpg-d1847jodl3ps738pqsjg-a.oregon-postgres.render.com:5432/lifeinweeks_db"
       - key: spring.datasource.username
