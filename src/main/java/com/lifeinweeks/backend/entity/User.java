@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "postgresql_user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
